@@ -19,8 +19,6 @@ def main():
     shutil.copy(os.path.join(SROOT, '__javascript__', 'main.min.js'), os.path.join(DROOT, 'main.min.js'))
     shutil.copy(os.path.join(SROOT, '__javascript__', 'main.js'), os.path.join(DROOT, 'main.js'))
 
-    if input('Upload to npm?  (y/n)  ').lower()[0:1] == 'y':
-        run('npm publish .')
 
 
 

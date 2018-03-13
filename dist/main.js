@@ -1,5 +1,5 @@
 "use strict";
-// Transcrypt'ed from Python, 2018-03-13 08:23:04
+// Transcrypt'ed from Python, 2018-03-13 09:02:35
 function main () {
     var __symbols__ = ['__py3.6__', '__esv5__'];
     var __all__ = {};
@@ -2203,18 +2203,22 @@ function main () {
 		var addnums = function (a, b) {
 			return a + b;
 		};
+		var factory = function () {
+			return addnums;
+		};
 		if (typeof (module) === 'object' && module.exports) {
-			module.exports = addnums;
+			module.exports = factory ();
 		}
 		else if (typeof (define) === 'function' && define.amd) {
-			define (list ([]), addnums);
+			define (list ([]), factory);
 		}
 		else {
-			window ['addnums'] = addnums;
+			window ['addnums'] = factory ();
 		}
 		__pragma__ ('<all>')
 			__all__.__name__ = __name__;
 			__all__.addnums = addnums;
+			__all__.factory = factory;
 		__pragma__ ('</all>')
 	}) ();
     return __all__;
