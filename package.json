@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "name": "addnums",
+  "main": "dist/addnums.js",
+  "module": "dist/addnums.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "...",
+    "url": "..."
+  },
+  "keywords": [
+    "add",
+    "math"
+  ],
+  "author": "Conan Albrecht <doconix@gmail.com>",
+  "license": "MIT",
+}
