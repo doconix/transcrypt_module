@@ -11,7 +11,7 @@ def addnums(a, b):
 ###  Export the library, depending on the environment
 
 def factory():
-    '''Return the exported function from this module.'''
+    # return a reference to the function that should be exported
     return addnums
 
 # CommonJS (node/npm)
@@ -25,4 +25,5 @@ elif typeof(define) is 'function' and define.amd:
 # assume browser
 else:
     # add the function to the top-level window object
-    window['addnums'] = factory()
+    f = factory()
+    window[f.js_name] = f
