@@ -15,12 +15,12 @@ def main():
         shutil.rmtree(os.path.join(SROOT, '__javascript__'))
 
     # transpile src/
-    run('transcrypt -b -m --parent=.none src/addnums.py')
-    shutil.copy(os.path.join(SROOT, '__javascript__', 'addnums.min.js'), os.path.join(DROOT, 'addnums.min.js'))
-    shutil.copy(os.path.join(SROOT, '__javascript__', 'addnums.js'), os.path.join(DROOT, 'addnums.js'))
+    run('transcrypt -b -m --parent=.none src/main.py')
+    shutil.copy(os.path.join(SROOT, '__javascript__', 'main.min.js'), os.path.join(DROOT, 'main.min.js'))
+    shutil.copy(os.path.join(SROOT, '__javascript__', 'main.js'), os.path.join(DROOT, 'main.js'))
 
     if input('Upload to npm?  (y/n)  ').lower()[0:1] == 'y':
-        run('npm publish'.format(src))
+        run('npm publish .')
 
 
 

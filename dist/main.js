@@ -1,6 +1,6 @@
 "use strict";
-// Transcrypt'ed from Python, 2018-03-13 08:06:58
-function addnums () {
+// Transcrypt'ed from Python, 2018-03-13 08:23:04
+function main () {
     var __symbols__ = ['__py3.6__', '__esv5__'];
     var __all__ = {};
     var __world__ = __all__;
@@ -2219,6 +2219,6 @@ function addnums () {
 	}) ();
     return __all__;
 }
-addnums ();
+main ();
 
-//# sourceMappingURL=extra/sourcemap/addnums.js.map
+//# sourceMappingURL=extra/sourcemap/main.js.map

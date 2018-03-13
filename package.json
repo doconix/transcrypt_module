@@ -1,19 +1,19 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "addnums",
-  "main": "dist/addnums.js",
-  "module": "dist/addnums.js",
-  "directories": {
-    "test": "tests"
-  },
+  "main": "dist/main.js",
+  "module": "dist/main.js",
+  "description": "An example of creating a universal module with Transcrypt.  This is not for production code.",
   "repository": {
-    "type": "...",
-    "url": "..."
+    "type": "git",
+    "url": "https://github.com/doconix/transcrypt_module"
   },
   "keywords": [
     "add",
-    "math"
+    "math",
+    "transcrypt",
+    "example"
   ],
   "author": "Conan Albrecht <doconix@gmail.com>",
-  "license": "MIT",
+  "license": "MIT"
 }
